@@ -1,0 +1,20 @@
+<p [ngStyle]= "{backgroundColor: getColor()}"
+[ngClass]="{online: serverStatus === 'online'}"
+>{{'server'}} with ID {{serverId}} and Status is {{serverStatus}}</p>
+<!-- <p>{{'server'}} with ID {{serverId}} and Status is {{getServerStatus()}}</p> -->
+<label for="username">Username</label>
+<input type="text" class="form-control" [(ngModel)]= "username"> 
+<p>Username is: {{username}}</p>
+<button class="btn btn-primary" [disabled]="username ===''" (click)="username = ''">Reset Username</button>
+
+<div style="margin-top: 5px;">
+    <button class="btn btn-primary" (click)="toggleDisplay()">Display Details</button>
+    <hr>
+    <p *ngIf="secret">Secret Password = tuna </p>
+    <br>
+    <ul>
+        <li *ngFor= "let coun of log" [ngStyle]="{backgroundColor:getneela()}" [ngClass]="{chitta: log.length === 5 || log.length > 5}">{{coun}}</li>
+        <li *ngFor ="let da of datii; let i = index" [ngStyle]="{backgroundColor: i == 5 || i >5 ? 'yellow': 'pink' }" [ngClass]="{chitta: i==5 || i>5 }">{{da}}</li>
+    </ul>
+    
+</div>

@@ -1,0 +1,9 @@
+<div>
+    <p>Life Cycle Works</p>
+    <input type="text" class="form-control" #namestore>
+    <button class="btn btn-primary" (click)="addname(namestore)" >Add name</button>
+    <button class="btn btn-success" (click)="onChangecompletly()">Completly changes</button>
+    <button class="btn btn-danger" (click)="onDestroyfirst()">Destroy Component</button>
+    <div *ngFor="let it of item">{{it.name}}</div>
+    
+</div>

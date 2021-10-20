@@ -1,0 +1,10 @@
+.container {
+  margin-top: 30px;
+}
+
+.row {
+  margin: 20px 0;
+}
+li{
+  border: 0.5px solid #f3eeee;
+}

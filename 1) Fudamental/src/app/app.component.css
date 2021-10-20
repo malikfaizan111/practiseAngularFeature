@@ -1,0 +1,12 @@
+h3
+{
+    color: darkblue;
+}
+
+*{
+    margin-top: 0.25em;
+}
+
+br{
+    border-bottom: solid, green, 1px;
+}
